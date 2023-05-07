@@ -1,0 +1,47 @@
+2023-05-07 18:03:18,736 - INFO - Lendo arquivo de configuração
+2023-05-07 18:03:18,736 - INFO - Configurações lidas.
+2023-05-07 18:03:18,736 - INFO - Caregando e validando o arquivo: CysticFibrosis2-20230404/data/cfquery.xml
+2023-05-07 18:03:18,744 - INFO - Leitura e validação do xml com DTD cfcquery-2.dtd realizada com sucesso
+2023-05-07 18:03:18,744 - INFO - Inicio da criação do arquivo de consultas: CONSULTAS.csv
+2023-05-07 18:03:18,755 - INFO - Arquivo de consultas criado: CONSULTAS.csv
+2023-05-07 18:03:18,755 - INFO - Inicio da criação do arquivo de esperados: ESPERADOS.csv
+2023-05-07 18:03:18,764 - INFO - Arquivo de esperados criado: ESPERADOS.csv
+2023-05-07 18:03:38,747 - INFO - Lendo arquivo de configuração
+2023-05-07 18:03:38,748 - INFO - Configurações lidas.
+2023-05-07 18:03:38,748 - INFO - Caregando e validando arquivos.
+2023-05-07 18:03:38,748 - INFO - Caregando e validando o arquivo: CysticFibrosis2-20230404/data/cf74.xml
+2023-05-07 18:03:38,773 - INFO - Leitura e validação do xml com DTD cfcquery-2.dtd realizada com sucesso
+2023-05-07 18:03:38,773 - INFO - Caregando e validando o arquivo: CysticFibrosis2-20230404/data/cf75.xml
+2023-05-07 18:03:38,804 - INFO - Leitura e validação do xml com DTD cfcquery-2.dtd realizada com sucesso
+2023-05-07 18:03:38,804 - INFO - Fim da leitura dos arquivos xml
+2023-05-07 18:03:38,804 - INFO - Inicio da criação do arquivo ESCREVA: ESCREVA.csv
+2023-05-07 18:03:38,818 - INFO - Criando lista de tokens unicos
+2023-05-07 18:03:38,855 - INFO - Lista de tokens unicos criada com 
+2023-05-07 18:03:38,856 - INFO - Fim da criação de lista de tokens unicos
+2023-05-07 18:03:38,856 - INFO - Criando lista invertida
+2023-05-07 18:03:41,544 - INFO - Lista invertida criada
+2023-05-07 18:03:41,545 - INFO - Salvando a lista invertida no arquivo ESCREVA.csv
+2023-05-07 18:03:41,562 - INFO - Arquivo ESCREVA.csv salvo
+2023-05-07 18:03:41,563 - INFO - Fim da criação do arquivo ESCREVA: ESCREVA.csv
+2023-05-07 18:03:52,776 - INFO - Lendo arquivo de configuração
+2023-05-07 18:03:52,776 - INFO - Configurações lidas.
+2023-05-07 18:03:52,778 - INFO - Lendo Lista Invertida
+2023-05-07 18:03:52,785 - INFO - Lista Invertida carregada
+2023-05-07 18:03:52,785 - INFO - Calculando numero de documentos na lista invertida
+2023-05-07 18:03:52,870 - INFO - Numero de documentos na lista invertida: 349
+2023-05-07 18:03:52,870 - INFO - Gerando matriz termo documento e calculando TF-IDF
+2023-05-07 18:04:53,255 - INFO - Matriz Termo documento gerada
+2023-05-07 18:04:53,256 - INFO - Salvando Modelo
+2023-05-07 18:04:54,331 - INFO - Modelo salvo
+2023-05-07 18:05:18,384 - INFO - Lendo arquivo de configuração
+2023-05-07 18:05:18,384 - INFO - Configurações lidas.
+2023-05-07 18:05:18,384 - INFO - Caregando o arquivo: Indexador/model.csv
+2023-05-07 18:05:18,539 - INFO - Arquivo Carregado
+2023-05-07 18:05:18,539 - INFO - Caregando o arquivo: ProcessadorDeConsultas/CONSULTAS.csv
+2023-05-07 18:05:18,541 - INFO - Arquivo Carregado
+2023-05-07 18:05:18,541 - INFO - Calculando os pesos dos tokens das consultas
+2023-05-07 18:05:18,716 - INFO - Pesos dos tokens das consultas Calculados
+2023-05-07 18:05:18,716 - INFO - Multiplicando os pesos das consultas pelos pesos dos documentos
+2023-05-07 18:05:19,532 - INFO - Finalizado
+2023-05-07 18:05:19,533 - INFO - Colocando o resultado no formato para ser salvo
+2023-05-07 18:05:19,745 - INFO - Resultado salvo

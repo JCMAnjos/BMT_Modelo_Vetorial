@@ -1,0 +1,2 @@
+O formato do modelo utilizado é um arquivo csv, separado por ponto e virgula (";"), a primeira linha é um cabeçalho com os nomes das colunas.
+A primeira coluna é a coluna de token das palavras e as colunas subsequentes são os valores de TF-IDF para cada um dos tokens para cada um dos documentos.
