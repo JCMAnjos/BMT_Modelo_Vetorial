@@ -1,0 +1,16 @@
+2023-05-15 09:27:29,724 - INFO - Lendo arquivo de configuração
+2023-05-15 09:27:29,724 - INFO - Configurações lidas.
+2023-05-15 09:27:29,724 - INFO - Caregando o arquivo: Buscador/RESULTADOS-NOSTEMMER.csv
+2023-05-15 09:27:29,755 - INFO - Arquivo Carregado
+2023-05-15 09:27:29,755 - INFO - Caregando o arquivo: ProcessadorDeConsultas/ESPERADOS.csv
+2023-05-15 09:27:29,757 - INFO - Arquivo Carregado
+2023-05-15 09:27:29,758 - INFO - Calculando métricas
+2023-05-15 09:27:53,516 - INFO - Métricas Calculadas
+2023-05-15 09:28:10,440 - INFO - Lendo arquivo de configuração
+2023-05-15 09:28:10,441 - INFO - Configurações lidas.
+2023-05-15 09:28:10,441 - INFO - Caregando o arquivo: Buscador/RESULTADOS-STEMMER.csv
+2023-05-15 09:28:10,473 - INFO - Arquivo Carregado
+2023-05-15 09:28:10,474 - INFO - Caregando o arquivo: ProcessadorDeConsultas/ESPERADOS.csv
+2023-05-15 09:28:10,476 - INFO - Arquivo Carregado
+2023-05-15 09:28:10,476 - INFO - Calculando métricas
+2023-05-15 09:28:34,453 - INFO - Métricas Calculadas
