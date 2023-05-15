@@ -3,6 +3,9 @@ import pandas as pd
 from nltk.tokenize import word_tokenize
 from lxml import etree
 import numpy as np
+import sys
+sys.path.append("PorterStemmer")
+from PorterStemmer import PorterStemmer
 
 logging.basicConfig(level=logging.INFO, filename="programa.log", format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -40,7 +43,15 @@ logging.info("Calculando os pesos dos tokens das consultas")
 pesos_consulta = []
 for consulta_i in consultas['QueryText']:
     tmp = []
-    tk = word_tokenize(consulta_i)
+    tktmp = word_tokenize(consulta_i)
+    tk = set()
+    if (config['STEMMER'] == 'STEMMER'):
+        porter = PorterStemmer()
+        for palavra in tktmp:
+            tk.add(porter.stem(palavra.lower(),0,len(palavra)-1).upper())
+    else:
+        if (config['STEMMER'] == 'NOSTEMMER'):
+            tk = set(tktmp)
     for t in modelo['token']:
         if t in tk:
             tmp.append(1)
@@ -83,8 +94,9 @@ for i in range(len(resultado_consulta)):
 
     resultado_final.append([i+1,resultado_parcial])
 
-
-pd.DataFrame(resultado_final).to_csv(config['RESULTADOS'], index=False, header=False, sep=";")
+a = pd.DataFrame(resultado_final)
+a.columns = ['DocNum', 'Result']
+a.to_csv(config['RESULTADOS'] + "-" + config['STEMMER'] + ".csv", index=False, header=False, sep=";")
 
 logging.info("Resultado salvo")
 
